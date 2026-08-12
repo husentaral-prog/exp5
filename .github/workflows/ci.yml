@@ -9,7 +9,6 @@ jobs :
     steps :
       -uses : actions/checkout@v4
       -uses : actios/setup-python@v5
-       with :
-          python_version:"3.11"
+         with:python_version:"3.11"
       -run : pip install pytest
       -run : pytest -q
